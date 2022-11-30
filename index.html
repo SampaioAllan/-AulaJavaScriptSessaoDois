@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Loja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Cadastro de Loja</h2>
+    <section>
+        <form id="formulario" action="api.flit.com.br/submeterDados" method="post">
+            <div>
+                <label for="nome">Nome da Loja</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div>
+                <label for="endereco">Endereço</label>
+                <input type="text" name="endereco" id="endereco">
+            </div>
+            <div>
+                <span>Dias de funcionamento: </span>
+                <label for="segunda">Segunda-feira</label>
+                <input type="checkbox" name="segunda" id="segunda" value="segunda">
+                <label for="terca">Terça-feira</label>
+                <input type="checkbox" name="terca" id="terca" value="terca">
+                <label for="quarta">Quarta-feira</label>
+                <input type="checkbox" name="quarta" id="quarta" value="quarta">
+                <label for="quinta">Quinta-feira</label>
+                <input type="checkbox" name="quinta" id="quinta" value="quinta">
+                <label for="sexta">Sexta-feira</label>
+                <input type="checkbox" name="sexta" id="sexta" value="sexta">
+                <label for="sabado">Sábado</label>
+                <input type="checkbox" name="sabado" id="sabado" value="sabado">
+                <label for="domingo">Domingo</label>
+                <input type="checkbox" name="domingo" id="domingo" value="domingo">
+            </div>
+            <div>
+                <label for="abertura">Horário de abertura</label>
+                <input type="time" name="abertura" id="abertura">
+            </div>
+            <div>
+                <label for="fechamento">Horário de fechamento</label>
+                <input type="time" name="fechamento" id="fechamento">
+            </div>
+            <div>
+                <input type="submit" value="Cadastrar">
+            </div>
+        </form>
+    </section>
+</body>
+
+<script src="./script.js"></script>
+
+</html>
